@@ -147,18 +147,23 @@
                 <h2 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-2 border-b pb-3 print:mt-4">
                     <i data-lucide="user" class="text-indigo-600"></i> Bahagian A: Maklumat Asas Guru <span class="italic text-base font-medium text-slate-500 ml-1">/ Part A: Teacher's Basic Info</span>
                 </h2>
+                <div class="bg-blue-50 text-blue-800 p-3 rounded-lg mb-6 text-sm flex items-start gap-2 border border-blue-100 print-hidden">
+                    <i data-lucide="info" class="w-5 h-5 shrink-0 mt-0.5"></i>
+                    <p>Sila lengkapkan sekurang-kurangnya Maklumat Asas ini sebelum menghantar borang. Bahagian pemerhatian dan soal selidik adalah opsyenal mengikut tujuan penilaian anda.<br><span class="italic text-xs mt-1 block">Please complete at least this Basic Info before submitting. Observation and questionnaire sections are optional based on your evaluation purpose.</span></p>
+                </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-2">Nama Guru <span class="italic font-normal text-slate-500">/ Teacher's Name</span></label>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Nama Guru <span class="text-rose-500">*</span> <span class="italic font-normal text-slate-500">/ Teacher's Name</span></label>
                         <input type="text" id="input-nama" placeholder="Sila masukkan nama penuh / Enter full name..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition disabled:bg-slate-100 print-border-none print-bg-transparent print-p-0" oninput="handleInput('nama', this.value)">
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-2">Tarikh <span class="italic font-normal text-slate-500">/ Date</span></label>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Tarikh <span class="text-rose-500">*</span> <span class="italic font-normal text-slate-500">/ Date</span></label>
                             <input type="date" id="input-tarikh" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 outline-none transition disabled:bg-slate-100 print-border-none print-bg-transparent print-p-0" oninput="handleInput('tarikh', this.value)">
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-2">Masa <span class="italic font-normal text-slate-500">/ Time</span></label>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Masa <span class="text-rose-500">*</span> <span class="italic font-normal text-slate-500">/ Time</span></label>
                             <input type="time" id="input-masa" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 outline-none transition disabled:bg-slate-100 print-border-none print-bg-transparent print-p-0" oninput="handleInput('masa', this.value)">
                         </div>
                     </div>
@@ -171,7 +176,7 @@
                     <h2 class="text-xl font-bold text-slate-800 flex items-center gap-2">
                         <i data-lucide="clipboard-check" class="text-indigo-600"></i> Bahagian B (1): Pemerhatian Tindakan Guru <span class="italic text-base font-medium text-slate-500 ml-1">/ Teacher's Action Observation</span>
                     </h2>
-                    <p class="text-sm text-slate-500 mt-1">Arahan: Tandakan mengikut pengalaman anda semasa mengendalikan kelas menggunakan aplikasi NODE. <br><span class="italic">Instruction: Check according to your experience while managing the class using the NODE app.</span></p>
+                    <p class="text-sm text-slate-500 mt-1">Arahan: Tandakan mengikut pengalaman anda semasa mengendalikan kelas menggunakan aplikasi NODE. (Opsyenal)<br><span class="italic">Instruction: Check according to your experience while managing the class using the NODE app. (Optional)</span></p>
                 </div>
                 <div id="teacher-checklist-container" class="space-y-4"></div>
             </div>
@@ -182,7 +187,7 @@
                     <h2 class="text-xl font-bold text-slate-800 flex items-center gap-2">
                         <i data-lucide="users" class="text-indigo-600"></i> Bahagian B (2): Pemerhatian Tingkah Laku Murid <span class="italic text-base font-medium text-slate-500 ml-1">/ Student Behavior Observation</span>
                     </h2>
-                    <p class="text-sm text-slate-500 mt-1">Arahan: Nilaikan tingkah laku murid semasa sesi PdP. <br><span class="italic">Instruction: Evaluate student behavior during the lesson.</span></p>
+                    <p class="text-sm text-slate-500 mt-1">Arahan: Nilaikan tingkah laku murid semasa sesi PdP. (Opsyenal)<br><span class="italic">Instruction: Evaluate student behavior during the lesson. (Optional)</span></p>
                 </div>
                 <div id="student-checklist-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
             </div>
@@ -241,7 +246,7 @@
                         <i data-lucide="save" class="w-10 h-10"></i>
                     </div>
                     <h2 class="text-2xl font-bold text-slate-800">Semakan & Penghantaran <span class="block text-lg italic font-normal text-slate-500">Review & Submission</span></h2>
-                    <p class="text-slate-500 mt-2">Sila pastikan semua maklumat adalah tepat sebelum mengesahkan borang. <br><span class="italic text-sm">Please ensure all information is accurate before confirming the form.</span></p>
+                    <p class="text-slate-500 mt-2">Sila pastikan maklumat asas lengkap sebelum mengesahkan borang. <br><span class="italic text-sm">Please ensure basic information is complete before confirming the form.</span></p>
                 </div>
 
                 <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 mb-8">
@@ -251,18 +256,18 @@
                     </ul>
                     <div class="mt-6 pt-4 border-t border-slate-200">
                         <div class="flex justify-between items-center">
-                            <span class="font-bold text-slate-800">Peratusan Siap <span class="italic font-normal text-slate-500 text-sm">/ Completion</span>:</span>
+                            <span class="font-bold text-slate-800">Peratusan Siap Keseluruhan <span class="italic font-normal text-slate-500 text-sm">/ Overall Completion</span>:</span>
                             <span id="summary-progress-text" class="text-2xl font-black text-indigo-600">0%</span>
                         </div>
                     </div>
                 </div>
 
-                <button id="submit-btn" onclick="submitForm()" class="w-full py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 bg-slate-200 text-slate-400 cursor-not-allowed" disabled>
-                    <i data-lucide="save" class="w-5 h-5"></i> Sahkan & Hantar Borang <span class="italic font-normal text-sm opacity-80">/ Confirm & Submit</span>
+                <button id="submit-btn" onclick="submitForm()" class="w-full py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-200 cursor-pointer">
+                    <i data-lucide="send" class="w-5 h-5"></i> Sahkan & Hantar Borang <span class="italic font-normal text-sm opacity-80">/ Confirm & Submit</span>
                 </button>
-                <p id="submit-warning" class="text-center text-sm text-rose-500 mt-3 flex items-center justify-center gap-1">
-                    <i data-lucide="alert-circle" class="w-4 h-4"></i> Terdapat soalan yang belum dijawab. <span class="italic">/ There are unanswered questions.</span>
-                </p>
+                <div id="submit-warning" class="text-center text-sm mt-3 transition-all">
+                    <!-- Warning / Info Injected via JS -->
+                </div>
             </div>
 
             <!-- Navigation Buttons (Bottom) -->
@@ -374,14 +379,14 @@
     <script>
         // --- DATA SOURCES (DWI-BAHASA) ---
         const TEACHER_CHECKLIST = [
-            { id: 'p1', code: 'P1', text: 'Guru dapat mengawal kelas secara hibrid dengan tenang, bergantung kepada fungsi penukaran automatik aplikasi antara mod luar talian (fail tempatan) dan mod dalam talian (Model 3D Sketchfab & Google Drive) tanpa sebarang gangguan teknikal (Matrimau, 2026b).<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher can manage the hybrid class calmly, relying on the app\'s automatic switching between offline and online modes without technical disruptions.</span>', citation: '"Effective hybrid synchronous teaching requires educators to seamlessly manage technological transitions to maintain pedagogical flow and engagement." (Moorhouse & Wong, 2022 - Pedagogi Hibrid)' },
-            { id: 'p2', code: 'P2', text: 'Guru memantau Teacher Dashboard tanpa henti menggunakan fungsi Smart Sync untuk menilai status Online/Offline masa nyata murid dan memantau matriks Engagement Score berdasarkan interaksi elemen seperti Habitat Builder (Matrimau, 2026a).<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher continuously monitors the Teacher Dashboard using the Smart Sync function to assess students\' real-time status and monitor the Engagement Score matrix.</span>', citation: '"Real-time learning analytics empower teachers to translate complex student interaction data into immediate, actionable pedagogical interventions." (Tsai et al., 2020 - Learning Analytics)' },
-            { id: 'p3', code: 'P3', text: 'Guru membimbing murid untuk mempamerkan jawapan menaakul melalui fungsi mod pembentangan Defend Your HOTS di skrin besar kelas (Matrimau, 2026a).<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher guides students to present reasoning answers through the Defend Your HOTS presentation mode function on the class big screen.</span>', citation: '"Technology-enhanced collaborative environments foster higher-order thinking by providing spaces for learners to socially negotiate and defend their reasoning." (Chiu, 2021 - Konstruktivisme Sosial Digital)' },
+            { id: 'p1', code: 'P1', text: 'Guru dapat mengawal kelas secara hibrid dengan tenang, bergantung kepada fungsi penukaran automatik aplikasi antara mod luar talian dan mod dalam talian (Model 3D Sketchfab & Google Drive) tanpa sebarang gangguan teknikal.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher can manage the hybrid class calmly, relying on the app\'s automatic switching between offline and online modes without technical disruptions.</span>', citation: '"Effective hybrid synchronous teaching requires educators to seamlessly manage technological transitions to maintain pedagogical flow and engagement." (Moorhouse & Wong, 2022 - Pedagogi Hibrid)' },
+            { id: 'p2', code: 'P2', text: 'Guru memantau Teacher Dashboard tanpa henti menggunakan fungsi Smart Sync untuk menilai status Online/Offline masa nyata murid dan memantau matriks Engagement Score.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher continuously monitors the Teacher Dashboard using the Smart Sync function to assess students\' real-time status and monitor the Engagement Score matrix.</span>', citation: '"Real-time learning analytics empower teachers to translate complex student interaction data into immediate, actionable pedagogical interventions." (Tsai et al., 2020 - Learning Analytics)' },
+            { id: 'p3', code: 'P3', text: 'Guru membimbing murid untuk mempamerkan jawapan menaakul melalui fungsi mod pembentangan Defend Your HOTS di skrin besar kelas.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher guides students to present reasoning answers through the Defend Your HOTS presentation mode function on the class big screen.</span>', citation: '"Technology-enhanced collaborative environments foster higher-order thinking by providing spaces for learners to socially negotiate and defend their reasoning." (Chiu, 2021 - Konstruktivisme Sosial Digital)' },
             { id: 'p4', code: 'P4', text: 'Guru menggunakan fungsi automasi Generate Pairs (AI Clinic) bagi melantik Chief Scientist dalam kalangan murid pakar untuk membantu murid lemah secara bersasar.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher uses the Generate Pairs (AI Clinic) automation function to appoint Chief Scientists among expert students to help weak students in a targeted manner.</span>', citation: '"Artificial intelligence can dynamically scaffold collaborative learning by intelligently pairing students based on complementary knowledge and skills." (Ouyang & Jiao, 2021 - AI-Supported Collaborative Learning)' },
-            { id: 'p5', code: 'P5', text: 'Guru memanfaatkan integrasi Model 3D interaktif semasa fasa Penerangan (Explain) dengan membimbing murid memutar dan meneliti struktur fizikal mikroorganisma secara terperinci, bukan sekadar membiarkan murid membuat tontonan pasif.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher utilizes the integration of interactive 3D Models during the Explain phase by guiding students to rotate and examine physical structures in detail.</span>', citation: '"Interacting with immersive 3D visualizations promotes embodied cognition and significantly enhances spatial understanding compared to static multimedia." (Makransky & Petersen, 2021 - Cognitive Affective Model of Immersive Learning)' },
-            { id: 'p6', code: 'P6', text: 'Guru memberi tindak balas (intervention) segera atau bimbingan 1-kepada-1 kepada murid di dalam kelas berdasarkan bacaan Diagnosis AI dan analisis butiran jawapan terperinci (Answers Breakdown) di papan pemuka guru.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher provides immediate intervention or 1-to-1 guidance based on AI Diagnosis readings and Answers Breakdown analysis on the dashboard.</span>', citation: '"AI-driven dashboards facilitate precision education by providing automated, just-in-time feedback that guides immediate teacher intervention." (Susnjak et al., 2022 - Pentaksiran Formatif Dipacu AI)' },
+            { id: 'p5', code: 'P5', text: 'Guru memanfaatkan integrasi Model 3D interaktif semasa fasa Penerangan (Explain) dengan membimbing murid memutar dan meneliti struktur fizikal mikroorganisma secara terperinci.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher utilizes the integration of interactive 3D Models during the Explain phase by guiding students to rotate and examine physical structures in detail.</span>', citation: '"Interacting with immersive 3D visualizations promotes embodied cognition and significantly enhances spatial understanding compared to static multimedia." (Makransky & Petersen, 2021 - Cognitive Affective Model of Immersive Learning)' },
+            { id: 'p6', code: 'P6', text: 'Guru memberi tindak balas (intervention) segera atau bimbingan 1-kepada-1 kepada murid di dalam kelas berdasarkan bacaan Diagnosis AI dan analisis butiran jawapan terperinci (Answers Breakdown).<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher provides immediate intervention or 1-to-1 guidance based on AI Diagnosis readings and Answers Breakdown analysis on the dashboard.</span>', citation: '"AI-driven dashboards facilitate precision education by providing automated, just-in-time feedback that guides immediate teacher intervention." (Susnjak et al., 2022 - Pentaksiran Formatif Dipacu AI)' },
             { id: 'p7', code: 'P7', text: 'Guru menggalakkan perbincangan saintifik dan proses penyelesaian masalah apabila murid melakukan kesilapan pemilihan parameter dalam Pembina Habitat (Habitat Builder) yang menyebabkan mikroorganisma mati.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher encourages scientific discussion and problem-solving processes when students make parameter selection mistakes in the Habitat Builder.</span>', citation: '"Designing digital environments that allow for productive failure encourages learners to activate prior knowledge and deepens subsequent conceptual learning." (Sinha & Kapur, 2021 - Productive Failure)' },
-            { id: 'p8', code: 'P8', text: 'Guru menunjukkan daya tahan (resilience) dan kelancaran pedagogi dengan meneruskan PdP menggunakan media sandaran luar talian (fail tempatan) tanpa panik apabila capaian internet terputus secara tiba-tiba (Offline Fallback).<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher demonstrates resilience by continuing the lesson using offline backup media without panicking when internet access is disrupted.</span>', citation: '"Digital resilience in educators involves the adaptive capacity to maintain pedagogical continuity when facing technological disruptions." (Howard et al., 2021 - Resiliensi Digital)' },
+            { id: 'p8', code: 'P8', text: 'Guru menunjukkan daya tahan (resilience) dan kelancaran pedagogi dengan meneruskan PdP menggunakan media sandaran luar talian (fail tempatan) tanpa panik apabila capaian internet terputus secara tiba-tiba.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The teacher demonstrates resilience by continuing the lesson using offline backup media without panicking when internet access is disrupted.</span>', citation: '"Digital resilience in educators involves the adaptive capacity to maintain pedagogical continuity when facing technological disruptions." (Howard et al., 2021 - Resiliensi Digital)' },
         ];
 
         const STUDENT_CHECKLIST = [
@@ -394,11 +399,11 @@
         const QUESTIONNAIRE = [
             { id: 'q1', num: 1, construct: 'Jangkaan Prestasi / Performance Expectancy', citation: '"The degree to which a person believes that using a particular system would enhance his or her job performance." (Davis, 1989; Venkatesh et al., 2003; disokong oleh Scherer et al., 2020)', text: 'Integrasi fungsi pemadanan automatik Generate Pairs (AI Clinic) menjimatkan masa saya dalam merancang aktiviti kerja berkumpulan dan sangat berkesan memperkasakan pembelajaran rakan sebaya (peer mentoring).<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The integration of the automatic pairing function Generate Pairs (AI Clinic) saves my time in planning group work activities and is highly effective in empowering peer mentoring.</span>' },
             { id: 'q2', num: 2, construct: 'Jangkaan Prestasi / Performance Expectancy', citation: '"The degree to which a person believes that using a particular system would enhance his or her job performance." (Davis, 1989; Venkatesh et al., 2003; disokong oleh Scherer et al., 2020)', text: 'Pemantauan aktiviti di Habitat Builder dan Microscope Simulation membantu saya mengenal pasti miskonsepsi murid secara langsung (real-time), membolehkan saya menegur kesilapan konseptual serta-merta.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">Monitoring activities in Habitat Builder and Microscope Simulation helps me identify students\' misconceptions in real-time, allowing me to address conceptual errors immediately.</span>' },
-            { id: 'q3', num: 3, construct: 'Jangkaan Prestasi / Performance Expectancy', citation: '"The degree to which a person believes that using a particular system would enhance his or her job performance." (Davis, 1989; Venkatesh et al., 2003; disokong oleh Scherer et al., 2020)', text: 'Saya mendapati penyepaduan Model 3D interaktif dan paparan visual gamifikasi (seperti pengesan Discovery Journey berbentuk dinosaur) meningkatkan daya tumpuan murid secara drastik berbanding kaedah konvensional.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">I found that the integration of interactive 3D models and gamified visual displays drastically increases students\' concentration compared to conventional methods.</span>' },
+            { id: 'q3', num: 3, construct: 'Jangkaan Prestasi / Performance Expectancy', citation: '"The degree to which a person believes that using a particular system would enhance his or her job performance." (Davis, 1989; Venkatesh et al., 2003; disokong oleh Scherer et al., 2020)', text: 'Saya mendapati penyepaduan Model 3D interaktif dan paparan visual gamifikasi meningkatkan daya tumpuan murid secara drastik berbanding kaedah konvensional.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">I found that the integration of interactive 3D models and gamified visual displays drastically increases students\' concentration compared to conventional methods.</span>' },
             { id: 'q4', num: 4, construct: 'Jangkaan Usaha / Effort Expectancy', citation: '"The degree to which a person believes that using a particular system would be free of effort / the degree of ease associated with the use of the system." (Davis, 1989; Venkatesh et al., 2003; disokong oleh Scherer et al., 2020)', text: 'Susun atur (layout) dan reka bentuk visual aplikasi NODE sangat intuitif dan mudah dinavigasi, membolehkan saya mencari modul yang diperlukan tanpa memerlukan latihan teknikal yang rumit.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The layout and visual design of the NODE app are highly intuitive and easy to navigate, allowing me to find required modules without complex technical training.</span>' },
             { id: 'q5', num: 5, construct: 'Jangkaan Usaha / Effort Expectancy', citation: '"The degree to which a person believes that using a particular system would be free of effort / the degree of ease associated with the use of the system." (Davis, 1989; Venkatesh et al., 2003; disokong oleh Scherer et al., 2020)', text: 'Transisi fungsi aplikasi seperti memuatkan model 3D, penukaran tab, dan paparan modal (seperti Defend Your HOTS) beroperasi dengan sangat lancar tanpa membekukan (freeze) peranti yang digunakan.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The transition of app functions like loading 3D models, switching tabs, and modal displays operates very smoothly without freezing the device used.</span>' },
             { id: 'q6', num: 6, construct: 'Keadaan Memudah Cara / Facilitating Conditions', citation: '"The degree to which an individual believes that an organizational and technical infrastructure exists to support use of the system." (Venkatesh et al., 2003; disokong oleh Al-Maroof et al., 2021)', text: 'Sifat aplikasi NODE yang "berdiri sendiri" (Standalone HTML) tanpa memerlukan pemasangan pelayan (Server) yang rumit menghilangkan tekanan teknikal saya sebelum memulakan pengajaran kelas digital.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The "standalone" nature of the NODE app without requiring complex server installations eliminates my technical stress before starting a digital class.</span>' },
-            { id: 'q7', num: 7, construct: 'Keadaan Memudah Cara / Facilitating Conditions', citation: '"The degree to which an individual believes that an organizational and technical infrastructure exists to support use of the system." (Venkatesh et al., 2003; disokong oleh Al-Maroof et al., 2021)', text: 'Sistem notifikasi pintar (Toast) dan keupayaan aplikasi menarik fail media secara hibrid (Fallback Mechanism) memberi keyakinan kepada saya. Saya tahu aplikasi akan memaparkan Model 3D interaktif dan video resolusi tinggi secara automatik apabila ada internet, tetapi tetap berfungsi lancar dengan media tempatan sebagai pelan sandaran tanpa menjejaskan emosi saya atau murid.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The smart notification system and the app\'s hybrid media fallback capability give me confidence. I know the app will display 3D models automatically when there is internet, but still function smoothly with local media as a backup plan.</span>' },
+            { id: 'q7', num: 7, construct: 'Keadaan Memudah Cara / Facilitating Conditions', citation: '"The degree to which an individual believes that an organizational and technical infrastructure exists to support use of the system." (Venkatesh et al., 2003; disokong oleh Al-Maroof et al., 2021)', text: 'Sistem notifikasi pintar (Toast) dan keupayaan aplikasi menarik fail media secara hibrid (Fallback Mechanism) memberi keyakinan kepada saya. Saya tahu aplikasi akan memaparkan Model 3D interaktif dan video resolusi tinggi secara automatik apabila ada internet, tetapi tetap berfungsi lancar dengan media tempatan sebagai pelan sandaran.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The smart notification system and the app\'s hybrid media fallback capability give me confidence. I know the app will display 3D models automatically when there is internet, but still function smoothly with local media as a backup plan.</span>' },
             { id: 'q8', num: 8, construct: 'Keadaan Memudah Cara / Facilitating Conditions', citation: '"The degree to which an individual believes that an organizational and technical infrastructure exists to support use of the system." (Venkatesh et al., 2003; disokong oleh Al-Maroof et al., 2021)', text: 'Fungsi penyegerakan Smart Sync yang hanya menghantar data baharu ke pangkalan awan (Google Sheets) sebaik sahaja internet dikesan dapat menjimatkan kuota data sekolah dan mengurangkan masa pengkeranian saya secara drastik.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">The Smart Sync feature, which only sends new data to the cloud once the internet is detected, saves school data quota and drastically reduces my clerical time.</span>' },
             { id: 'q9', num: 9, construct: 'Pengaruh Sosial / Social Influence', citation: '"The degree to which an individual perceives that important others believe he or she should use the new system." (Venkatesh et al., 2003; disokong oleh Al-Maroof et al., 2021)', text: 'Fungsi terbina dalam seperti butang "Cetak" (Print) Laporan Individu dan integrasi Pangkalan Data Tempatan memudahkan tugas saya/pentadbir untuk tujuan pelaporan rasmi dan dokumentasi PBD.<br><span class="text-sm italic font-normal text-slate-500 mt-1 block">Built-in functions such as the Individual Report "Print" button and Local Database integration ease my/the administrator\'s task for official reporting and documentation purposes.</span>' }
         ];
@@ -592,14 +597,16 @@
         }
 
         function renderSummary() {
-            let pCount = Object.keys(formData).filter(k => k.startsWith('p') && formData[k]).length;
-            let mCount = Object.keys(formData).filter(k => k.startsWith('m') && formData[k]).length;
-            let qCount = Object.keys(formData).filter(k => k.startsWith('q') && formData[k]).length;
+            let pCount = Object.keys(formData).filter(k => k.startsWith('p') && formData[k] !== '').length;
+            let mCount = Object.keys(formData).filter(k => k.startsWith('m') && formData[k] !== '').length;
+            let qCount = Object.keys(formData).filter(k => k.startsWith('q') && formData[k] !== '').length;
+            
+            // Maklumat Asas sahaja yang wajib
             let asasComplete = formData.nama && formData.tarikh && formData.masa;
 
             let asasHTML = asasComplete 
                 ? `<span class="text-emerald-600 font-semibold flex items-center gap-1"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Lengkap <span class="italic text-xs font-normal ml-0.5">/ Complete</span></span>` 
-                : `<span class="text-rose-500 font-semibold flex items-center gap-1"><i data-lucide="alert-circle" class="w-4 h-4"></i> Belum Lengkap <span class="italic text-xs font-normal ml-0.5">/ Incomplete</span></span>`;
+                : `<span class="text-rose-500 font-semibold flex items-center gap-1"><i data-lucide="alert-circle" class="w-4 h-4"></i> Diperlukan <span class="italic text-xs font-normal ml-0.5">/ Required</span></span>`;
 
             document.getElementById('summary-list').innerHTML = `
                 <li class="flex justify-between items-center text-sm">
@@ -607,15 +614,15 @@
                 </li>
                 <li class="flex justify-between items-center text-sm">
                     <span class="text-slate-600 font-medium">Pemerhatian Guru <span class="italic font-normal text-xs text-slate-400">/ Teacher Obs</span>:</span>
-                    <span class="font-semibold ${pCount === 8 ? 'text-emerald-600' : 'text-amber-500'}">${pCount} / 8 Dijawab</span>
+                    <span class="font-semibold ${pCount === 8 ? 'text-emerald-600' : 'text-slate-500'}">${pCount} / 8 Dijawab</span>
                 </li>
                 <li class="flex justify-between items-center text-sm">
                     <span class="text-slate-600 font-medium">Pemerhatian Murid <span class="italic font-normal text-xs text-slate-400">/ Student Obs</span>:</span>
-                    <span class="font-semibold ${mCount === 4 ? 'text-emerald-600' : 'text-amber-500'}">${mCount} / 4 Dijawab</span>
+                    <span class="font-semibold ${mCount === 4 ? 'text-emerald-600' : 'text-slate-500'}">${mCount} / 4 Dijawab</span>
                 </li>
                 <li class="flex justify-between items-center text-sm">
                     <span class="text-slate-600 font-medium">Soal Selidik <span class="italic font-normal text-xs text-slate-400">/ Questionnaire</span>:</span>
-                    <span class="font-semibold ${qCount === 9 ? 'text-emerald-600' : 'text-amber-500'}">${qCount} / 9 Dijawab</span>
+                    <span class="font-semibold ${qCount === 9 ? 'text-emerald-600' : 'text-slate-500'}">${qCount} / 9 Dijawab</span>
                 </li>
             `;
 
@@ -626,16 +633,25 @@
             let btn = document.getElementById('submit-btn');
             let warning = document.getElementById('submit-warning');
             
-            if(progress === 100) {
+            // Logik penghantaran: Hanya perlukan maklumat asas
+            if(asasComplete) {
                 btn.disabled = false;
                 btn.className = "w-full py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-200 cursor-pointer";
-                warning.classList.add('hidden');
+                
+                if (progress === 100) {
+                    warning.classList.add('hidden');
+                } else {
+                    warning.classList.remove('hidden');
+                    let emptyCount = totalFields - Object.values(formData).filter(v => v !== '').length;
+                    warning.className = "text-center text-sm mt-3 transition-all text-amber-500 flex items-center justify-center gap-1";
+                    warning.innerHTML = `<i data-lucide="info" class="w-4 h-4"></i> Anda masih boleh menghantar borang (Bahagian lain adalah opsyenal). <span class="italic font-normal text-xs ml-1">/ You can still submit (Other parts are optional).</span>`;
+                }
             } else {
                 btn.disabled = true;
                 btn.className = "w-full py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 bg-slate-200 text-slate-400 cursor-not-allowed";
                 warning.classList.remove('hidden');
-                let emptyCount = totalFields - Object.values(formData).filter(v => v !== '').length;
-                warning.innerHTML = `<i data-lucide="alert-circle" class="w-4 h-4"></i> Terdapat ${emptyCount} soalan yang belum dijawab. <span class="italic font-normal text-xs ml-1">/ There are unanswered questions.</span>`;
+                warning.className = "text-center text-sm mt-3 transition-all text-rose-500 flex items-center justify-center gap-1";
+                warning.innerHTML = `<i data-lucide="alert-circle" class="w-4 h-4"></i> Sila lengkapkan Maklumat Asas untuk menghantar. <span class="italic font-normal text-xs ml-1">/ Complete Basic Info to submit.</span>`;
             }
             lucide.createIcons();
         }
@@ -679,17 +695,22 @@
 
         // --- SUBMIT & SCORE CALCULATIONS ---
         function calculateScores() {
+            // Mengira Hybrid Score berasaskan jumlah soalan yang dijawab sahaja
             const pKeys = ['p1','p2','p3','p4','p5','p6','p7','p8'];
             const pYa = pKeys.filter(k => formData[k] === 'Ya').length;
-            const hybridScore = Math.round((pYa / 8) * 100);
+            const hybridScore = Math.round((pYa / 8) * 100); 
 
+            // Student Score
             const mKeys = ['m1','m2','m3','m4'];
             const mYa = mKeys.filter(k => formData[k] === 'Ya').length;
             const studentScore = Math.round((mYa / 4) * 100);
 
+            // Average score calculation (hanya ambil kira yang dijawab)
             const getAvg = (keys) => {
-                let sum = keys.reduce((acc, k) => acc + parseInt(formData[k] || 0), 0);
-                return (sum / keys.length);
+                let answered = keys.filter(k => formData[k] !== '');
+                if (answered.length === 0) return 0;
+                let sum = answered.reduce((acc, k) => acc + parseInt(formData[k]), 0);
+                return (sum / answered.length);
             };
 
             const constructs = [
@@ -699,15 +720,16 @@
                 { id: 'SI', name: 'Pengaruh Sosial / Social Influence', keys: ['q9'], avg: getAvg(['q9']) }
             ];
 
-            const overallAvg = constructs.reduce((acc, c) => acc + c.avg, 0) / 4;
+            let validConstructs = constructs.filter(c => c.avg > 0);
+            const overallAvg = validConstructs.length > 0 ? validConstructs.reduce((acc, c) => acc + c.avg, 0) / validConstructs.length : 0;
             const dpdIndex = Math.round((overallAvg / 5) * 100);
 
             return { hybridScore, studentScore, dpdIndex, constructs };
         }
 
         async function submitForm() {
-            if(progress < 100) {
-                alert("Sila lengkapkan semua medan sebelum menghantar. / Please complete all fields before submitting.");
+            if(!formData.nama || !formData.tarikh || !formData.masa) {
+                alert("Sila lengkapkan Maklumat Asas (Nama, Tarikh, Masa) sebelum menghantar. / Please complete Basic Info.");
                 return;
             }
             
@@ -783,43 +805,53 @@
             document.getElementById('construct-bars').innerHTML = constructs.map(c => {
                 const percent = (c.avg / 5) * 100;
                 let color = 'bg-emerald-500';
-                if (c.avg < 3.5) color = 'bg-amber-500';
-                if (c.avg < 2.5) color = 'bg-rose-500';
+                if (c.avg > 0 && c.avg < 3.5) color = 'bg-amber-500';
+                if (c.avg > 0 && c.avg < 2.5) color = 'bg-rose-500';
+                if (c.avg === 0) color = 'bg-slate-200'; // Default jika tidak dijawab
                 
                 return `
                     <div>
                         <div class="flex flex-col sm:flex-row sm:justify-between text-sm mb-1">
-                            <span class="font-semibold text-slate-700">${c.name}</span>
-                            <span class="font-bold text-slate-600 mt-1 sm:mt-0">${c.avg.toFixed(1)} / 5.0</span>
+                            <span class="font-semibold ${c.avg === 0 ? 'text-slate-400' : 'text-slate-700'}">${c.name}</span>
+                            <span class="font-bold ${c.avg === 0 ? 'text-slate-400' : 'text-slate-600'} mt-1 sm:mt-0">${c.avg > 0 ? c.avg.toFixed(1) : 'Tiada Data / N/A'} ${c.avg > 0 ? '/ 5.0' : ''}</span>
                         </div>
                         <div class="w-full bg-slate-100 rounded-full h-2.5 print-border">
-                            <div class="${color} h-2.5 rounded-full transition-all duration-1000" style="width: ${percent}%"></div>
+                            <div class="${color} h-2.5 rounded-full transition-all duration-1000" style="width: ${c.avg === 0 ? '0' : percent}%"></div>
                         </div>
                     </div>
                 `;
             }).join('');
 
+            // Dapatkan jumlah soalan yang dijawab bagi AI membaca konteks
+            let pCount = Object.keys(formData).filter(k => k.startsWith('p') && formData[k] !== '').length;
+            let mCount = Object.keys(formData).filter(k => k.startsWith('m') && formData[k] !== '').length;
+            let qCount = Object.keys(formData).filter(k => k.startsWith('q') && formData[k] !== '').length;
+
             let diagnosis = [];
             
-            if (hybridScore < 60) {
+            if (pCount > 0 && hybridScore < 60) {
                 diagnosis.push(`<li class="flex gap-3"><i data-lucide="alert-triangle" class="w-5 h-5 text-rose-500 shrink-0"></i> <div><strong>Kemahiran Hibrid Rendah <span class="italic font-normal">/ Low Hybrid Skills</span>:</strong> Anda disyorkan untuk membuat simulasi kelas ringkas tanpa internet sebelum mengajar bagi membiasakan diri dengan pelan tindakan 'Offline Fallback'. <br><span class="italic text-slate-500 text-xs">It is recommended to run a brief offline class simulation to familiarize yourself with the 'Offline Fallback' action plan.</span></div></li>`);
             }
-            if (studentScore < 50) {
+            if (mCount > 0 && studentScore < 50) {
                 diagnosis.push(`<li class="flex gap-3"><i data-lucide="info" class="w-5 h-5 text-amber-500 shrink-0"></i> <div><strong>Penglibatan Murid Sederhana <span class="italic font-normal">/ Moderate Student Engagement</span>:</strong> Gunakan fungsi 'Generate Pairs' untuk melantik murid pakar (Chief Scientist) bagi membantu merangsang interaksi rakan sebaya. <br><span class="italic text-slate-500 text-xs">Use the 'Generate Pairs' function to appoint expert students (Chief Scientist) to help stimulate peer interaction.</span></div></li>`);
             }
             
-            if (constructs[0].avg < 3.5) { 
+            if (qCount > 0 && constructs[0].avg > 0 && constructs[0].avg < 3.5) { 
                 diagnosis.push(`<li class="flex gap-3"><i data-lucide="trending-down" class="w-5 h-5 text-indigo-500 shrink-0"></i> <div><strong>Tahap Jangkaan Prestasi <span class="italic font-normal">/ Performance Expectancy</span>:</strong> Skor menunjukkan anda mungkin belum melihat potensi penuh impak aplikasi ini terhadap prestasi PdP. Cuba fokus mengeksplorasi fungsi interaktif 3D. <br><span class="italic text-slate-500 text-xs">Scores suggest you may not have seen the full potential impact of this app on teaching performance. Try focusing on exploring the interactive 3D functions.</span></div></li>`);
             }
-            if (constructs[1].avg < 3.5) { 
+            if (qCount > 0 && constructs[1].avg > 0 && constructs[1].avg < 3.5) { 
                 diagnosis.push(`<li class="flex gap-3"><i data-lucide="mouse-pointer" class="w-5 h-5 text-amber-500 shrink-0"></i> <div><strong>Isu Kemudahan Penggunaan <span class="italic font-normal">/ Effort Expectancy</span>:</strong> Skor mencadangkan anda memerlukan masa untuk membiasakan diri dengan navigasi antara muka (UI) aplikasi. <br><span class="italic text-slate-500 text-xs">Scores suggest you need time to familiarize yourself with the app's user interface (UI) navigation.</span></div></li>`);
             }
-            if (dpdIndex >= 80 && hybridScore >= 80) {
+            if (dpdIndex >= 80 && hybridScore >= 80 && pCount > 0) {
                 diagnosis.push(`<li class="flex gap-3"><i data-lucide="award" class="w-5 h-5 text-emerald-500 shrink-0"></i> <div><strong>Penerimaan Teknologi Cemerlang <span class="italic font-normal">/ Excellent Tech Acceptance</span>:</strong> Kepimpinan instruksional anda dan tahap penerimaan sistem (TAM/UTAUT) sangat tinggi. Anda bersedia untuk bertindak sebagai Mentor DPD. <br><span class="italic text-slate-500 text-xs">Your instructional leadership and system acceptance level are very high. You are ready to act as a DPD Mentor.</span></div></li>`);
             }
 
             if(diagnosis.length === 0) {
-                diagnosis.push(`<li class="flex gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 shrink-0"></i> <div>Tahap penerimaan teknologi yang memuaskan. Teruskan amalan integrasi digital anda secara konsisten berdasarkan model TAM dan UTAUT. <br><span class="italic text-slate-500 text-xs">Satisfactory technology acceptance level. Continue your digital integration practices consistently based on TAM and UTAUT models.</span></div></li>`);
+                if (pCount === 0 && mCount === 0 && qCount === 0) {
+                    diagnosis.push(`<li class="flex gap-3"><i data-lucide="info" class="w-5 h-5 text-slate-500 shrink-0"></i> <div>Data pemerhatian tidak mencukupi untuk menjana analisis diagnosis intervensi. <br><span class="italic text-slate-500 text-xs">Insufficient observation data to generate an intervention diagnosis analysis.</span></div></li>`);
+                } else {
+                    diagnosis.push(`<li class="flex gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 shrink-0"></i> <div>Tahap penerimaan teknologi yang memuaskan. Teruskan amalan integrasi digital anda secara konsisten berdasarkan model TAM dan UTAUT. <br><span class="italic text-slate-500 text-xs">Satisfactory technology acceptance level. Continue your digital integration practices consistently based on TAM and UTAUT models.</span></div></li>`);
+                }
             }
 
             document.getElementById('ai-diagnosis-list').innerHTML = diagnosis.join('');
@@ -878,7 +910,7 @@
                         </td>
                         <td class="px-6 py-4 font-semibold text-slate-800 uppercase">${row.nama}</td>
                         <td class="px-6 py-4 text-center">
-                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold ${row.scores.dpdIndex >= 80 ? 'bg-emerald-100 text-emerald-700 border border-emerald-200' : 'bg-indigo-100 text-indigo-700 border border-indigo-200'}">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold ${row.scores.dpdIndex >= 80 ? 'bg-emerald-100 text-emerald-700 border border-emerald-200' : (row.scores.dpdIndex === 0 ? 'bg-slate-100 text-slate-500 border border-slate-200' : 'bg-indigo-100 text-indigo-700 border border-indigo-200')}">
                                 ${row.scores.dpdIndex}%
                             </span>
                         </td>
